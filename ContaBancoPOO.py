@@ -168,14 +168,15 @@ class PessoaFisica(Cliente):
 # Funções para interação com o usuário
 def menu():
     menu = """
-    ================ MENU ================
-    [d]\tDepositar
+   \033[33m ================ MENU ================ \033[m 
+    \033[34m[d]\tDepositar
     [s]\tSacar
     [e]\tExtrato
     [nc]\tNova conta
     [lc]\tListar contas
     [nu]\tNovo usuário
-    [q]\tSair
+    [q]\tSair \033[34m
+    \033[33m =====================================\033[m 
     => """
     return input(menu)
 
